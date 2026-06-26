@@ -2,6 +2,9 @@ from orchestrator.agents.base import Agent
 
 
 class PlannerAgent(Agent):
+    async def handle(self, message: dict) -> None:
+        pass
+
     async def decompose(self, goal: str) -> list[str]:
         steps = [
             f"Research: {goal}",
